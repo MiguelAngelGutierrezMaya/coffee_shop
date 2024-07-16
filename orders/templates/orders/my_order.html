@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!--{% debug order %}-->
+<div class="m-auto flex flex-col w-1/2 gap-2 p-6 rounded-lg shadow-md">
+    <h2 class="font-bold text-3xl">Detalles de la orden</h2>
+    <div class="flex flex-row">
+        <span class="font-bold text-inline">Usuario: </span>&nbsp;{{order.user.username}}
+    </div>
+    <div class="flex flex-row">
+        <span class="font-bold text-inline">Fecha de la orden: </span>&nbsp;{{order.order_date | date}}
+    </div>
+    <div class="mt-2 border-b-2 border-b-gray-500 py-2">
+        <h2 class="font-bold text-3xl">Artículos en tu orden:</h2>
+        {% for product_order in order.orderproduct_set.all %}
+        <section class="mt-2 flex flex-row justify-between"></section>
+        {{product_order.product.name}}
+        {{product_order.product.price}}
+        {% empty %}
+        <p class="font-bold">No hay productos en tu pedido</p>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}
