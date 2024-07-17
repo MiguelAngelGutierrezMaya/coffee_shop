@@ -10,7 +10,7 @@ class Order(models.Model):
     order_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f'Order {self.id} by {self.user}'
+        return f"Order {self.id} by {self.user}"
 
 
 class OrderProduct(models.Model):
@@ -19,4 +19,4 @@ class OrderProduct(models.Model):
     quantity = models.PositiveIntegerField(default=0)
 
     def __str__(self):
-        return f'{self.quantity} of {self.product} in order {self.order}'
+        return f"{self.quantity} of {self.product} in order {self.order}"

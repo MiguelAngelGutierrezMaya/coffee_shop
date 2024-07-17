@@ -6,11 +6,11 @@ class OrderProductForm(ModelForm):
     class Meta:
         model = OrderProduct
         fields = [
-            'product',
+            "product",
             # 'quantity'
         ]
         labels = {
-            'product': 'Product',
+            "product": "Product",
             # 'quantity': 'Quantity'
         }
         # widgets = {
