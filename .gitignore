@@ -178,3 +178,9 @@ cython_debug/
 
 # User-specific stuff
 .idea
+
+logos
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
