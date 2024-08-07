@@ -16,7 +16,9 @@ class ProductListView(generic.ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        print('context:', context)
         context["products"] = Product.objects.all()
+        print('context:', context)
         return context
 
 
