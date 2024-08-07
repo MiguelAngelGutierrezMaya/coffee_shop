@@ -34,14 +34,16 @@ SECRET_KEY = "django-insecure-ebtl-jym74$2u102tl^o!9%ktxyzc9$uz3v4e0mpm2rf-3p5+)
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '3.143.166.166',
-    'awseb--awseb-owc1d9x9lud1-1907093182.us-east-2.elb.amazonaws.com',
-    '3.131.29.82',
-    '172.31.9.249',
-    'coffee-shop-production.eba-jg8xawmf.us-east-2.elasticbeanstalk.com'
+    'localhost:8000',
+    'localhost',
+    # '3.143.166.166',
+    # 'awseb--awseb-owc1d9x9lud1-1907093182.us-east-2.elb.amazonaws.com',
+    # '3.131.29.82',
+    # '172.31.9.249',
+    'coffee-shop-production.eba-62qmqzam.us-west-2.elasticbeanstalk.com'
 ]
 
-SECURE_SSL_REDIRECT = False
+# SECURE_SSL_REDIRECT = False
 
 # Application definition
 
