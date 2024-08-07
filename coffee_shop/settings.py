@@ -34,7 +34,7 @@ SECRET_KEY = "django-insecure-ebtl-jym74$2u102tl^o!9%ktxyzc9$uz3v4e0mpm2rf-3p5+)
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'coffee-shop.us-east-2.elasticbeanstalk.com'
+    'coffee-shop-production.eba-t5mvz2ni.us-east-2.elasticbeanstalk.com'
 ]
 
 # SECURE_SSL_REDIRECT = False
