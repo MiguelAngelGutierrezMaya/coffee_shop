@@ -40,7 +40,7 @@ ALLOWED_HOSTS = [
     # 'awseb--awseb-owc1d9x9lud1-1907093182.us-east-2.elb.amazonaws.com',
     # '3.131.29.82',
     # '172.31.9.249',
-    'coffee-shop-production.eba-62qmqzam.us-west-2.elasticbeanstalk.com'
+    'coffee-shop.us-east-2.elasticbeanstalk.com'
 ]
 
 # SECURE_SSL_REDIRECT = False
