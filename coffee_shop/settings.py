@@ -34,12 +34,6 @@ SECRET_KEY = "django-insecure-ebtl-jym74$2u102tl^o!9%ktxyzc9$uz3v4e0mpm2rf-3p5+)
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'localhost:8000',
-    'localhost',
-    # '3.143.166.166',
-    # 'awseb--awseb-owc1d9x9lud1-1907093182.us-east-2.elb.amazonaws.com',
-    # '3.131.29.82',
-    # '172.31.9.249',
     'coffee-shop.us-east-2.elasticbeanstalk.com'
 ]
 
@@ -138,8 +132,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = "static/"
-STATIC_ROOT = "static"
+STATIC_URL = os.path.join(BASE_DIR, "static/")
+STATIC_ROOT = "static/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
