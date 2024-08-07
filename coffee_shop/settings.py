@@ -41,6 +41,8 @@ ALLOWED_HOSTS = [
     'coffee-shop-production.eba-jg8xawmf.us-east-2.elasticbeanstalk.com'
 ]
 
+SECURE_SSL_REDIRECT = False
+
 # Application definition
 
 INSTALLED_APPS = [
